@@ -5,33 +5,39 @@
 
     <title>Title</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        .wrap{
+
+        .wrap {
             width: 100%;
             height: 100px;
             background-color: white;
             /*border: 1px solid black;*/
             /*overflow: hidden;*/
         }
-        .title{
+
+        .title {
             display: inline-block;
             overflow: hidden;
         }
-        .moment{
+
+        .moment {
             margin: 25px 120px;
             width: 100px;
             height: 50px;
         }
-        .login{
-            display:inline-block;
+
+        .login {
+            display: inline-block;
         }
-        .title div{
+
+        .title div {
             float: left;
         }
-        .first{
+
+        .first {
             width: 80px;
             height: 100px;
             border-bottom: 3px solid black;
@@ -39,7 +45,8 @@
             line-height: 100px;
             font-size: 15px;
         }
-        .nav{
+
+        .nav {
             width: 80px;
             height: 100px;
             text-align: center;
@@ -47,18 +54,20 @@
             font-size: 15px;
         }
 
-        .pen{
-            width:50px ;
+        .pen {
+            width: 50px;
             height: 50px;
             float: left;
             background: url("img/4884FDE9DE9610B940E2BA7FD943954E.jpg");
             background-size: 100% 100%;
         }
-        .pen:hover{
+
+        .pen:hover {
             background: url("img/B25504459674513FBBFF4C276ECB6737.jpg");
             background-size: 100% 100%;
         }
-        .login{
+
+        .login {
             float: left;
             width: 150px;
             height: 50px;
@@ -70,11 +79,15 @@
             border-radius: 50px;
             color: darkgreen;
         }
-        .login:hover{
+
+        .login:hover {
             color: white;
             background-color: darkgreen;
+            transition: all 1s;
+
         }
-        .right{
+
+        .right {
             width: 300px;
             height: 52px;
             float: right;
@@ -82,45 +95,646 @@
             margin: 25px 50px;
 
         }
-        .first:hover{
+
+        .first:hover {
             background-color: lightgray;
         }
-        .nav:hover{
+
+        .nav:hover {
             background-color: lightgray;
         }
-        
+
+        .second {
+            width: 920px;
+            margin: 50px auto;
+            padding: 0;
+            border: 1px solid black;
+
+        }
+
+        .secondImg {
+            width: 900px;
+            height: 450px;
+            margin: 10px auto;
+            border: 1px solid black;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .left {
+            float: left;
+            width: 450px;
+            height: 450px;
+        }
+
+        .leftBorder {
+            display: inline-block;
+            margin: 0;
+            overflow: hidden;
+            float: left;
+        }
+
+        .right1 {
+            width: 225px;
+            height: 225px;
+            margin: 0;
+        }
+
+        .rightWrap {
+            float: left;
+            width: 450px;
+            height: 450px;
+            overflow: hidden;
+        }
+
+        .rightBorder {
+            float: left;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        .firstMask {
+            width: 450px;
+            height: 100px;
+            background-color: black;
+            opacity: 0.8;
+            position: absolute;
+            bottom: 0;
+            display: none;
+        }
+
+        .line {
+            width: 40px;
+            /*height: 1px;*/
+            border: 1px solid white;
+            position: absolute;
+            top: 30px;
+            left: 20px;
+        }
+
+        .firstWord {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            left: 20px;
+            bottom: 30px;
+        }
+
+        .leftBorder img:hover {
+            transform: scale(1.1);
+            transition: all 0.5s;
+        }
+
+        .leftBorder:hover .firstMask {
+            display: block;
+        }
+
+        .firstMask1 {
+            width: 225px;
+            height: 80px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: black;
+            opacity: 0.8;
+        }
+
+        .firstWord1 {
+            position: absolute;
+            left: 10px;
+            bottom: 20px;
+            font-size: 20px;
+            color: white;
+            width: 210px;
+            height: 20px;
+            overflow: hidden;
+
+        }
+
+        .line1 {
+            width: 20px;
+            border: 0.2px solid white;
+            position: absolute;
+            left: 10px;
+            top: 20px;
+        }
+
+        .secondTitle {
+            width: 900px;
+            height: 40px;
+            margin: 50px auto 35px;
+        }
+
+        .secondTitle div {
+            display: inline-block;
+
+        }
+
+        .secondTitleNav {
+            margin: 10px 10px;
+            /*width: 20px;*/
+            height: 20px;
+        }
+
+        .secondBlock {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            opacity: 0.8;
+        }
+
+        .readC {
+            height: 20px;
+            line-height: 20px;
+            font-size: 18px;
+            border-right: 1px solid black;
+            padding: 0;
+        }
+
+        .readE {
+            height: 20px;
+            line-height: 20px;
+            font-size: 18px;
+            padding: 0;
+        }
+
+        .secondContent1 {
+            margin: 10px auto;
+            width: 900px;
+            height: 250px;
+            border: 1px solid lightgray;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contentnLeft {
+            width: 570px;
+            float: left;
+        }
+
+        .secondContentTitle {
+            margin: 20px 15px;
+            font-size: 30px;
+            top: 20px;
+        }
+
+        .secondContentTitle:hover {
+            color: chartreuse;
+        }
+
+        .contentWriter {
+            padding: 0;
+            margin: 6px 15px;
+            font-size: 15px;
+        }
+
+        .contentWriter:hover {
+            color: chartreuse;
+        }
+
+        .content {
+            margin: 5px 15px;
+            font-size: 15px;
+
+            font-weight: 200;
+        }
+
+        .contentLine {
+            width: 45px;
+            border: 1px solid black;
+            margin: 15px 15px;
+        }
+
+        .contentRight {
+            width: 300px;
+            height: 250px;
+            background: url("http://hpimg.pianke.me/37563e4b91cdb37d6784d234454d8f5020170619.jpg?imageView2/2/w/640/format/jpg&quot;");
+            background-size: 100% 100%;
+            float: left;
+            margin-left: 30px;
+        }
+
+        .contentRead {
+            display: inline-block;
+            border-right: 1px solid black;
+            padding: 0 5px;
+        }
+
+        .contentCritics {
+            display: inline-block;
+            border-right: 1px solid black;
+            padding: 0 5px;
+        }
+
+        .contentLike {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .critics {
+            margin: 50px 15px;
+        }
+
+        .content a {
+            color: green;
+            text-decoration: none;
+        }
+
+        .contentRight1 {
+            width: 300px;
+            height: 250px;
+            background: url("http://hpimg.pianke.me/47f879d4128bb2b0922861a77e8f598d20170426.jpg?imageView2/2/w/640/format/jpg&quot;");
+            background-size: 100% 100%;
+            float: left;
+            margin-left: 30px;
+        }
+
+        .contentRight2 {
+            width: 300px;
+            height: 250px;
+            background: url("http://hpimg.pianke.me/254ca7c5dfdbc1f0f5675767589d144920170505.jpg?imageView2/2/w/640/format/jpg&quot;");
+            background-size: 100% 100%;
+            float: left;
+            margin-left: 30px;
+        }
+
+        .music {
+            width: 900px;
+            margin: 10px auto;
+            overflow: hidden;
+        }
+
+        .firstMusic {
+            width: 270px;
+            height: 400px;
+
+            float: left;
+        }
+
+        .musicPic1 {
+            width: 270px;
+            height: 270px;
+        }
+
+        .playMusic {
+            width: 80px;
+            height: 20px;
+            border-right: 1px solid lightgray;
+            display: inline-block;
+            font-size: 10px;
+        }
+
+        .criticsNum {
+            width: 70px;
+            height: 20px;
+            border-right: 1px solid lightgray;
+            display: inline-block;
+            font-size: 10px;
+        }
+
+        .musicLike {
+            width: 80px;
+            height: 20px;
+            display: inline-block;
+            font-size: 10px;
+        }
+
+        .musicTitle {
+            font-size: 30px;
+            margin: 15px;
+        }
+
+        .musicAutor {
+            margin: 10px 15px;
+        }
+
+        .musicCritics {
+            margin: 10px 15px;
+        }
+
+        .secondMusic {
+            width: 270px;
+            height: 400px;
+
+            float: left;
+            margin: 0 45px;
+        }
+
+        .musicPic1 {
+            width: 270px;
+            height: 270px;
+        }
+
+        .musicPic2 {
+            width: 270px;
+            height: 270px;
+        }
+
+        .musicPic3 {
+            width: 270px;
+            height: 270px;
+        }
+
+        .musicTitle:hover {
+            color: darkgreen;
+        }
+
+        .musicAutor:hover {
+            color: darkgreen;
+        }
+
+        .musicPic1:hover {
+            transform: scale(1.1);
+            transition: all 1s;
+        }
+
+        .musicPic2:hover {
+            transform: scale(1.1);
+            transition: all 1s;
+        }
+
+        .musicPic3:hover {
+            transform: scale(1.1);
+            transition: all 1s;
+        }
+
+        .musicPic {
+            overflow: hidden;
+        }
+
+        .foot {
+            width: 900px;
+            margin: auto;
+        }
+
+        .firstMusician {
+            width: 210px;
+            height: 210px;
+            border: 1px solid black;
+            background: url("img/user-bg.png");
+            background-size: 100% 100%;
+            overflow: hidden;
+        }
+
+        .footPic {
+            width: 90px;
+            height: 90px;
+            border-radius: 45px;
+            overflow: hidden;
+            display: inline-block;
+            margin-top: 50px;
+            float: left;
+        }
+
+        .footAutor {
+            margin-top: 20px ;
+
+        }
+
+        .footSinger {
+            display: inline-block;
+        }
+        .footLine{
+            border: 1px solid white;
+            width: 30px;
+        }
+
+        .footDirection {
+            width: 100px;
+            height: 90px;
+            display: inline-block;
+            margin-right: 10px;
+            float: left;
+            margin-top: 50px;
+        }
 
     </style>
 </head>
 <body>
-<div class = "wrap">
-    <img src="img/C180C735-D11F-450D-9E16-53B1D0F63600.png" alt="" class = "moment">
-    <div class = "title">
-        <div class = "first">首页</div>
+<div class="wrap">
+    <img src="img/C180C735-D11F-450D-9E16-53B1D0F63600.png" alt="" class="moment">
+    <div class="title">
+        <div class="first">首页</div>
         <div class=" nav">阅读</div>
-        <div class ="nav">电台</div>
-        <div class = "nav">碎片</div>
-        <div class = "nav">客户端</div>
+        <div class="nav">电台</div>
+        <div class="nav">碎片</div>
+        <div class="nav">客户端</div>
 
     </div>
-    <div class = "right">
-        <div class = "pen"></div>
-        <div class = "login">登录/注册</div>
+    <div class="right">
+        <div class="pen"></div>
+        <div class="login">登录/注册</div>
     </div>
-
-        
-
-    
-
-
-
-
-
-    
 </div>
+<div class="second">
+    <!--//图片-->
+    <div class="secondImg">
+        <div class="leftBorder">
+            <img src="img/10ec7bfffb06c90f7d36421df5afaebf20170321.jpg" alt="" class="left">
+            <div class="firstMask">
+                <div class="line"></div>
+                <div class="firstWord">
+                    这样锻炼,你才会掌握说话...
+                </div>
+            </div>
+        </div>
+
+        <div class="rightWrap">
+            <div class="rightBorder">
+                <img src="img/fdb9e3529e71d35abc1b574005b1e35a20170508.jpg" alt="" class="right1">
+                <div class="firstMask1">
+                    <div class=" line1"></div>
+                    <div class="firstWord1">怎样找到自己真正想做的事...</div>
+                </div>
+            </div>
+            <div class="rightBorder">
+                <img src="img/b7ba659ac441c3996e12be395ba61bcb20170501.jpg" alt="" class="right1">
+                <div class="firstMask1">
+                    <div class=" line1"></div>
+                    <div class="firstWord1">有社交恐惧症的你,该怎么克服...</div>
+                </div>
+            </div>
+            <div class="rightBorder">
+                <img src="img/d261c1e53975eca13bb0f6ac83f62a4a20170225.jpg" alt="" class="right1">
+                <div class="firstMask1">
+                    <div class=" line1"></div>
+                    <div class="firstWord1">外公的两条命</div>
+                </div>
+            </div>
+            <div class="rightBorder">
+                <img src="img/4b9cabfe7bdaef3757ce818f1617776020170509.jpg" alt="" class="right1">
+                <div class="firstMask1">
+                    <div class=" line1"></div>
+                    <div class="firstWord1">坚持手写帐135天,生活发生了哪些改变?</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--导航栏-->
+    <div class="secondTitle">
+        <div class="secondTitleNav">
+            <div class="secondBlock"></div>
+            <div class="readC">阅读</div>
+            <div class="readE">read</div>
+        </div>
+
+    </div>
+
+    <!--内容-->
+    <div class=" secondContent1">
+        <div class=" contentnLeft">
+            <div class="secondContentTitle">超能力</div>
+            <div class="contentWriter">By/Whale小诺</div>
+            <div class="contentLine"></div>
+            <div class="content">
+                <div>01 路过小区里公园的花坛时，她往往会在原地停留了片刻，像是在等候什么一样。等候之余，她会四</div>
+                <span>处看看，趁没人注意的时候，她还会蹲下来，“喵喵喵”的叫</span>
+                <a href="">VIEW ALL
+                    <img src="img/viewall.png" alt="" width="10px" height="10px">
+                </a>
+                <div class="critics">
+                    <div class="contentRead">358次阅读</div>
+                    <div class="contentCritics">评论:2</div>
+                    <div class="contentLike">喜欢:23</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="contentRight">
+            <a href=""></a>
+        </div>
+    </div>
+    <div class=" secondContent1">
+        <div class=" contentnLeft">
+            <div class="secondContentTitle">黄泉馆,倒霉鬼</div>
+            <div class="contentWriter">By/子夜晨星</div>
+            <div class="contentLine"></div>
+            <div class="content">
+                <div>1. 俗话说，人走运的时候，出门就能捡到钱。人倒霉的时候，喝凉水都能塞着牙缝。人的运势自然是有</div>
+                <span>起有落，有高有低。 据说一个人如果运势旺，做事情就会顺风顺 </span>
+                <a href="">VIEW ALL
+                    <img src="img/viewall.png" alt="" width="10px" height="10px">
+                </a>
+                <div class="critics">
+                    <div class="contentRead">679次阅读</div>
+                    <div class="contentCritics">评论:0</div>
+                    <div class="contentLike">喜欢:34</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="contentRight1">
+            <a href=""></a>
+        </div>
+    </div>
+    <div class=" secondContent1">
+        <div class=" contentnLeft">
+            <div class="secondContentTitle">飞鸿踏雪泥</div>
+            <div class="contentWriter">By/失足少年七千</div>
+            <div class="contentLine"></div>
+            <div class="content">
+                <div>1. “一个人挥刀的速度，不在于他有多恨那个人。” “有的人在挥刀之前，会犹豫不决。” “有的人发觉</div>
+                <span>自己有些动摇时，反而更快地作出决定</span>
+                <a href="">VIEW ALL
+                    <img src="img/viewall.png" alt="" width="10px" height="10px">
+                </a>
+                <div class="critics">
+                    <div class="contentRead">1.2k次阅读</div>
+                    <div class="contentCritics">评论:8</div>
+                    <div class="contentLike">喜欢:73</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="contentRight2">
+            <a href=""></a>
+        </div>
+    </div>
+    <!--导航栏-->
+    <div class="secondTitle">
+        <div class="secondTitleNav">
+            <div class="secondBlock"></div>
+            <div class="readE">TING</div>
+        </div>
+    </div>
+
+    <!--音乐-->
+    <div class="music">
+        <div class="firstMusic">
+            <div class="musicPic">
+                <a href=""></a>
+                <img src="img/CFB057F2-3D47-40FF-8B3B-97F7F02F62EC.png" alt="" class="musicPic1">
+            </div>
+            <div class="musicTitle">爱在日落黄昏后</div>
+            <div class="musicAutor">主播/阿见</div>
+            <div class="musicCritics">
+                <div class="playMusic ">7.0k次播放</div>
+                <div class="criticsNum">评论:8</div>
+                <div class="musicLike">喜欢:69</div>
+            </div>
+        </div>
+        <div class="secondMusic">
+            <div class="musicPic">
+                <a href=""></a>
+                <img src="img/419AEEA5-5CEE-419A-807B-EFE2B05E9344.png" alt="" class="musicPic2">
+            </div>
+            <div class="musicTitle">他不爱我</div>
+            <div class="musicAutor">主播/NJ文轲</div>
+            <div class="musicCritics">
+                <div class="playMusic ">254.0k次播放</div>
+                <div class="criticsNum">评论:68</div>
+                <div class="musicLike">喜欢:1.0k</div>
+            </div>
+        </div>
+        <div class="thirdMusic">
+            <div class="musicPic">
+                <a href=""></a>
+                <img src="img/C758DE8B-5C10-465E-A5A6-FBA9AA901065.png" alt="" class="musicPic3">
+            </div>
+            <div class="musicTitle">遇见</div>
+            <div class="musicAutor">主播/乐文熙</div>
+            <div class="musicCritics">
+                <div class="playMusic ">149.0k次播放</div>
+                <div class="criticsNum">评论:182</div>
+                <div class="musicLike">喜欢:1.6k</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--导航栏-->
+    <div class="secondTitle">
+        <div class="secondTitleNav">
+            <div class="secondBlock"></div>
+            <div class="readC">人气片客</div>
+            <div class="readE">Hot Pianker</div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="firstMusician">
+            <div class="footPic">
+                <img src="img/1.jpeg" height="90" width="90"/>
+            </div>
+            <div class="footDirection">
+                <div class="footAutor">
+                    王睿 Ray
+                </div>
+                <div class="footLine">
+
+                </div>
+                <div class="footSinger">
+                    流行歌手王睿
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
-
+</div>
 </body>
+
 </html>
